@@ -1,9 +1,11 @@
 <html>
-<head>
+  <head>
     {{ content_for_header }}
-</head>
-<body>
-    {% render 'header' %}
+
+    <link rel="stylesheet" href="{{ 'style.css' | asset_url }}">
+  </head>
+  <body>
+    {% section 'header' %}
     {{ content_for_layout }}
-</body>
+  </body>
 </html>
